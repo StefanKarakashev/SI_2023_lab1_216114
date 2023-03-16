@@ -1,0 +1,99 @@
+Чекор 1 - "Git" е инсталиран, направен е профил на "Github" - https://github.com/StefanKarakashev
+
+Чекор 2 - Име на главна гранка променето во "master"
+
+Чекор 3 - Креиран е репозиториум на "github" со име "SI_2023_lab1_216114", мометално е приватен
+
+Чекор 4 - Направен локален репозиториум со исто име како репозиториумот на "github".
+Го иницијалиризам "Git" користејќи ја командата "git init"
+
+Чекор 5 - Ги поврзувам двата репозиториума користејќи ја командата
+"git remote add origin https://github.com/StefanKarakashev/SI_2023_lab1_216114.git"
+
+Чекор 6 - додавам фајл "README.md" и се потпишувам, моментално е во "untracked"
+состојба, со командата "git add README.md" фајлот сега е во "staged" состојба,
+правам "commit" со командата git commit -m "Initial commit".
+"Initial commit" е описот за овој "commit"
+
+Чекор 7 - додавам фајл "SILab1.java", моментално е во "untracked" состојба,
+со командата "git add SILab1.java", фајлот сега е во "staged" состојба,
+правам "commit" со командата git commit -m "Add java class".
+"Add java class" е описот за овој "commit"
+
+Чекор 8 - ја прикачувам гранката "master" на "github" користејќи ја командата
+"git push origin master" со 2 "commits":
+"Add java class" и "Initial commit" користејќи ја командата "git push origin master"
+
+Чекор 9 - Разгранувам 3 гранки "(bug1, bug2, bug3)" од гранката "master".
+"bug1" - команда "git checkout -b -b bug1", моментално сум во гранка "bug1" и се
+врајќам на "master" гранката користеќи ја командата "git checkout master"
+
+"bug2" - команда "git checkout -b bug2", моментално сум во гранка "bug2" и се
+врајќам на "master" гранката користеќи ја командата "git checkout master"
+
+"bug3" - команда "git checkout -b bug3", моментално сум во гранка "bug3" и се
+врајќам на "master" гранката користеќи ја командата "git checkout master"
+
+Чекор 10 - Се префрлувам на гранка "bug1" користејќи ја командата "git checkout bug1"
+
+Чекор 11 - Грешката ја поправам. Правам "commit" користејќи ја командата
+"git commit -a -m". Користам веднаш "-a" бидејќи во моментот "SILab1.java" е во "tracked" состојба.
+Опис на овој "commit" e "Fix wrong loop for reading"
+
+Чекор 12 - Се префрлувам на гранка "bug2" користејќи ја командата "git checkout bug2"
+
+Чекор 13 - Грешката ја поправам. Правам "commit" користејќи ја командата
+"git commit -a -m". Користам веднаш "-a" бидејќи во моментот "SILab1.java" е во "tracked" состојба.
+Опис на овој "commit" e "Fix wrong condition in filterOddNumbers"
+
+Чекор 14 - Се префрлувам на гранка "bug3" користејќи ја командата "git checkout bug3"
+
+Чекор 15 - Грешката ја поправам. Правам "commit" користејќи ја командата
+"git commit -a -m". Користам веднаш "-a" бидејќи во моментот "SILab1.java" е во "tracked" состојба.
+Опис на овој "commit" e "Fix method sumEvenNumbers"
+
+Чекор 16 - Правам "push" на новите 3 гранки "(bug1, bug2, bug3)" со командите:
+"git push origin bug1"
+"git push origin bug2"
+"git push origin bug3"
+
+Чекор 17 - Се префрлувам на гранка "master" користејќи ја командата "git checkout master"
+
+Чекор 18 - Ја спојувам гранката "bug1" кон гранката "master" користејќи ја командата
+"git merge bug1". Се користи "Fast-forward merge", нема конфликт
+
+Чекор 19 - Правам "push" на гранката "master" на "github" користејќи ја командата
+"git push origin master"
+
+Чекор 20 - Ја спојувам гранката "bug2" кон гранката "master" користејќи ја командата
+"git merge bug2". Се користи "Fast-forward merge"
+
+Чекор 21 - Правам "push" на гранката "master" на "github" користејќи ја командата
+"git push origin master", нема конфликт
+
+Чекор 22 - Се префрлувам на гранката "bug3" користејќи ја командата "git checkout bug3"
+
+Чекор 23 - Успешно правам "rebase" на гранката "bug3" кон "master"
+
+Чекор 24 - Се префрлувам на гранката "master" користејќи ја командата "git checkout master"
+
+Чекор 25 - Ја спојувам гранката "bug3" кон гранката "master" користејќи ја командата "git merge bug3".
+Се користи "Fast-forward merge", нема конфликт
+
+Чекор 26 - Правам "push" на гранката "bug3" на "github" користејќи ја командата
+"git push --force origin bug3".
+Правам "push" на гранката "master" на "github" користејќи ја командата
+"git push origin master". Не е потребно "--force"
+
+Чекор 27 - Го додавам овој ".txt" фалј, и "logs.txt" во кој што ги ископирувам сите логови, кои
+ги добивам користејќи ја команата "git --no-pager logs". Ги префрлувам во "staged" фаза користејќи
+ја командата "git add .". Го правам последниот "commit" користејќи ја командата "git commit -m".
+Опис на овој "commit" е "Final commit".
+
+Чекор 28 - Овој чекор го пишам пред да го направам последниот "push" користејќи ја командата
+"git push origin master"
+
+
+
+
+
